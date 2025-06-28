@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "English Vocabulary Learner",
+    "slug": "english-vocabulary-learner-y0k750w",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.rork.english-vocabulary-learner-y0k750w"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "app.rork.english-vocabulary-learner-y0k750w"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png",
+      "build": {
+        "babel": {
+          "use": "metro"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://rork.com/"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

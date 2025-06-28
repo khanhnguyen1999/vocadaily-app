@@ -1,0 +1,8 @@
+import 'react-native-url-polyfill/auto';
+import { createClient } from '@supabase/supabase-js';
+import * as dotenv from 'dotenv';
+
+const supabaseUrl = process.env.SUPABASE_URL || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpvaHd3aWdmeW5xbXN5cnNod213Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MDM5MjM3MCwiZXhwIjoyMDY1OTY4MzcwfQ.nYp7zDrxTC3z9PhLTqjLwhSD6XKD2d_SK1pLhYh9ZL4';
+const supabaseAnonKey = process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpvaHd3aWdmeW5xbXN5cnNod213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAzOTIzNzAsImV4cCI6MjA2NTk2ODM3MH0.7MYbe8x_Ig5lDfWEjepJ8y97mg-fbTOaFwFztVWT0ds';
+
+export const supabase = createClient('https://johwwigfynqmsyrshwmw.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpvaHd3aWdmeW5xbXN5cnNod213Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MDM5MjM3MCwiZXhwIjoyMDY1OTY4MzcwfQ.nYp7zDrxTC3z9PhLTqjLwhSD6XKD2d_SK1pLhYh9ZL4');
